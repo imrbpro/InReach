@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InReach", "InReach\InReach.csproj", "{61C1276A-7A83-4295-9697-18C1A35E6B32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InReach.Tests", "InReach.Tests\InReach.Tests.csproj", "{C83247B7-9022-43D7-BDC1-F8BD75C74E15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61C1276A-7A83-4295-9697-18C1A35E6B32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C1276A-7A83-4295-9697-18C1A35E6B32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C1276A-7A83-4295-9697-18C1A35E6B32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C1276A-7A83-4295-9697-18C1A35E6B32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C83247B7-9022-43D7-BDC1-F8BD75C74E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83247B7-9022-43D7-BDC1-F8BD75C74E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83247B7-9022-43D7-BDC1-F8BD75C74E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83247B7-9022-43D7-BDC1-F8BD75C74E15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9357E9F-E9C9-4448-9450-9B5C7BC4C8F7}
+	EndGlobalSection
+EndGlobal
