@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
@@ -18,8 +19,9 @@ namespace InReach
         private MailMessage mail = new MailMessage();
         private SmtpClient smtp = new SmtpClient();
         private string email = "rehan.baig.bukc@gmail.com";
-        private string password = "********";
+        private string password = "*********";
         private string folderpath = "";
+        private string filename = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             sucessmsg.Visible = false;
@@ -29,10 +31,15 @@ namespace InReach
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             folderpath = Server.MapPath("~/Uploads/");
+            filename = Path.GetFileName(FileUpload.FileName);
             if (FileUpload.HasFile)
             {
-                FileUpload.SaveAs(folderpath + FileUpload.FileName);
-                link = basePath + ("/Uploads/"+ FileUpload.FileName);
+                if (!Directory.Exists(folderpath))
+                {
+                    Directory.CreateDirectory(folderpath);
+                }
+                FileUpload.SaveAs(folderpath + filename);
+                link = basePath + ("/Uploads/"+ filename);
                 SendEmail(txtemail.Value, link);
                 sucessmsg.Visible = true;
             }
